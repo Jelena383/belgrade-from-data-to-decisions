@@ -1,0 +1,86 @@
+:root { --plava: #1f5f99; --siva: #5b6472; --pozadina: #f4f6f9; --crvena: #b42318; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--pozadina); color: #1f2937; }
+header { background: var(--plava); color: white; padding: 1.2rem 1.5rem; position: relative; }
+header h1 { margin: 0; font-size: 1.6rem; }
+header p { margin: 0.3rem 0 0; opacity: 0.95; }
+.jezik { position: absolute; top: 1rem; right: 1.5rem; display: flex; gap: 0.3rem; }
+.jezik button { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.7);
+                border-radius: 5px; padding: 0.25rem 0.6rem; cursor: pointer; font-size: 0.9rem; }
+.jezik button.aktivan { background: white; color: var(--plava); font-weight: 700; }
+.napomena-vrh { background: #fff7e6; border-bottom: 1px solid #f5d38a; color: #6b4e00;
+                padding: 0.7rem 1.5rem; font-size: 0.92rem; text-align: center; }
+nav.kartice { max-width: 900px; margin: 1.2rem auto 0; padding: 0 1rem; display: flex; gap: 0.4rem;
+              flex-wrap: wrap; border-bottom: 2px solid #d5dbe3; }
+nav.kartice button { background: transparent; border: none; border-bottom: 3px solid transparent;
+                     padding: 0.6rem 0.9rem; font-size: 0.98rem; color: var(--siva); cursor: pointer;
+                     margin-bottom: -2px; }
+nav.kartice button.aktivan { color: var(--plava); border-bottom-color: var(--plava); font-weight: 700; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+main { max-width: 900px; margin: 1.2rem auto; padding: 0 1rem; }
+.kartica { background: white; border-radius: 10px; padding: 1.2rem 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.kartica + .kartica { margin-top: 1.5rem; }
+.forma { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; }
+label { display: flex; flex-direction: column; font-size: 0.9rem; color: var(--siva); gap: 0.3rem; }
+input, select { padding: 0.45rem; font-size: 1rem; border: 1px solid #cbd5e1; border-radius: 6px; }
+.preporuka { margin: 1.2rem 0 0.6rem; padding: 1rem; border-left: 5px solid var(--plava); background: #eef4fb; }
+.preporuka span, .preporuka small { display: block; color: var(--siva); }
+.preporuka strong { font-size: 2rem; color: var(--plava); }
+.zasto { font-size: 0.93rem; color: #374151; border-left: 3px solid #cbd5e1; padding-left: 0.8rem; margin: 0.6rem 0 1rem; }
+.zasto p { margin: 0.35rem 0; }
+.upozorenje { color: var(--crvena); font-weight: 600; }
+.napomena { color: var(--siva); font-style: italic; }
+.termini { display: flex; flex-direction: column; gap: 0.3rem; }
+.termin { display: grid; grid-template-columns: 90px 1fr 110px; align-items: center; gap: 0.6rem; font-size: 0.95rem; }
+.termin.izabran { font-weight: 700; color: var(--plava); }
+.traka { background: #e5e7eb; border-radius: 4px; height: 12px; overflow: hidden; }
+.traka div { background: #94a3b8; height: 100%; }
+.termin.izabran .traka div { background: var(--plava); }
+.dugme { margin-top: 1rem; background: var(--plava); color: white; border: none; border-radius: 6px;
+         padding: 0.55rem 1rem; font-size: 0.95rem; cursor: pointer; }
+.dugme:hover { background: #174a78; }
+#karta { height: 560px; border-radius: 8px; margin-top: 0.5rem; background: #ffffff; border: 1px solid #e5e7eb; }
+.leaflet-tooltip.opstina-oznaka { background: transparent; border: none; box-shadow: none; color: #6b7280;
+  font-size: 12px; font-family: "Segoe UI", Arial, sans-serif; padding: 0; }
+.leaflet-tooltip.opstina-oznaka::before { display: none; }
+.legenda-karta { background: white; padding: 0.6rem 0.8rem; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  font-size: 12px; line-height: 1.6; color: #1f2937; max-width: 230px; }
+.legenda-karta b { display: block; margin-bottom: 0.3rem; font-size: 12px; }
+.legenda-karta i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 0.4rem;
+  vertical-align: middle; border: 1px solid #1f2937; }
+.legenda-naslov { margin: 0.7rem 0 0.2rem; font-size: 0.85rem; font-weight: 600; color: var(--siva); }
+.legenda { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; margin-top: 0.3rem; color: var(--siva); }
+.legenda i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 0.35rem;
+             vertical-align: middle; border: 1px solid #1f2937; }
+.kalendar-omot { overflow-x: auto; margin-top: 0.5rem; }
+table.kalendar { border-collapse: separate; border-spacing: 2px; width: 100%; font-size: 0.82rem; }
+table.kalendar th { font-weight: 600; color: var(--siva); padding: 0.3rem; white-space: nowrap; }
+table.kalendar tbody th { text-align: left; }
+table.kalendar td { text-align: center; padding: 0.35rem 0.2rem; border-radius: 3px; color: #1f2937; }
+table.kalendar td.fiksni { outline: 3px solid var(--plava); outline-offset: -3px; font-weight: 700; }
+footer { max-width: 900px; margin: 0 auto 2rem; padding: 0 1rem; font-size: 0.8rem; color: var(--siva); }
+
+/* ---------- ŠTAMPA / PDF ---------- */
+@page { size: A4; margin: 12mm; }
+@media print {
+  .ne-stampaj { display: none !important; }
+  body { background: white; font-size: 11pt; }
+  header { background: white; color: #1f2937; border-bottom: 2px solid var(--plava); padding: 0 0 0.3rem; }
+  header h1 { font-size: 1.3rem; }
+  .napomena-vrh { background: white; border: 1px solid #ccc; padding: 0.4rem; margin: 0.4rem 0; }
+  main { margin: 0; padding: 0; max-width: none; }
+  .kartica { box-shadow: none; border: none; padding: 0.3rem 0; }
+  .kartica + .kartica { margin-top: 0.6rem; break-before: page; }
+  .forma { grid-template-columns: repeat(4, 1fr); gap: 0.4rem; }
+  input, select { border: 1px solid #999; font-size: 0.85rem; padding: 0.2rem; appearance: none; }
+  .preporuka, .zasto, .termin, table.kalendar tr { break-inside: avoid; }
+  .preporuka { margin: 0.6rem 0 0.4rem; padding: 0.5rem 0.8rem; }
+  .preporuka strong { font-size: 1.6rem; }
+  .termini { gap: 0.1rem; }
+  .termin { font-size: 0.8rem; }
+  h3 { margin: 0.6rem 0 0.3rem; font-size: 0.95rem; }
+  table.kalendar { font-size: 0.72rem; }
+  table.kalendar td { padding: 0.2rem 0.1rem; }
+  table.kalendar td, .traka div, .preporuka { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  footer { margin: 0.5rem 0 0; padding: 0; }
+}

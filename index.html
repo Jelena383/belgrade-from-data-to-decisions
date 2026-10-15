@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kada napolje? – GZJZ Beograd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <header>
+    <div class="jezik ne-stampaj">
+      <button id="btn-sr" class="aktivan" aria-label="Srpski">SR</button>
+      <button id="btn-en" aria-label="English">EN</button>
+    </div>
+    <h1 data-t="naslov"></h1>
+    <p data-t="podnaslov"></p>
+  </header>
+
+  <div class="napomena-vrh" role="note" data-t="napomenaVrh"></div>
+
+  <nav class="kartice ne-stampaj" role="tablist">
+    <button role="tab" data-deo="deo-plan" class="aktivan" aria-selected="true" data-t="tab_plan"></button>
+    <button role="tab" data-deo="deo-rez" aria-selected="false" data-t="tab_rez"></button>
+    <button role="tab" data-deo="deo-prot" aria-selected="false" id="tab-protokol"></button>
+    <button role="tab" data-deo="deo-obj" aria-selected="false" data-t="tab_obj"></button>
+  </nav>
+
+  <main>
+    <!-- ===== PLANIRAJ AKTIVNOST ===== -->
+    <div id="deo-plan" class="deo" role="tabpanel">
+      <section class="kartica">
+        <h2 data-t="kalkulator"></h2>
+        <div class="forma">
+          <label><span data-t="datum"></span><input type="date" id="datum"></label>
+          <label><span data-t="lokacija"></span><select id="lokacija"></select></label>
+          <label><span data-t="ustanova"></span>
+            <select id="tip">
+              <option value="skola_2smene" data-t="skola_2smene"></option>
+              <option value="skola_1smena" data-t="skola_1smena"></option>
+              <option value="vrtic" data-t="vrtic"></option>
+              <option value="dom" data-t="dom"></option>
+            </select>
+          </label>
+          <label><span data-t="jutro_lbl"></span>
+            <select id="jutro">
+              <option value="nema" data-t="j_nema"></option>
+              <option value="dobro" data-t="j_dobro"></option>
+              <option value="umereno" data-t="j_umereno"></option>
+              <option value="poor" data-t="j_poor"></option>
+            </select>
+          </label>
+        </div>
+        <div id="rezultat" aria-live="polite"></div>
+        <button id="stampaj" class="dugme ne-stampaj" data-t="stampaj"></button>
+      </section>
+
+      <section class="kartica ne-stampaj">
+        <h2 data-t="karta"></h2>
+        <p id="karta-naslov" class="napomena"></p>
+        <div id="karta" role="region" aria-label="Karta / Map"></div>
+        <p class="napomena" data-t="klik"></p>
+      </section>
+
+      <section class="kartica">
+        <h2 data-t="kalendar"></h2>
+        <p id="kalendar-naslov" class="napomena"></p>
+        <div class="kalendar-omot" id="kalendar"></div>
+        <p class="napomena" data-t="kalNapomena"></p>
+      </section>
+    </div>
+
+    <!-- ===== KAKO SU PRAVILA RADILA ===== -->
+    <div id="deo-rez" class="deo" role="tabpanel" hidden>
+      <section class="kartica">
+        <h2 data-t="tab_rez"></h2>
+        <div id="rezultati-rada"></div>
+      </section>
+    </div>
+
+    <!-- ===== PROTOKOL ZA USTANOVE ===== -->
+    <div id="deo-prot" class="deo" role="tabpanel" hidden>
+      <section class="kartica">
+        <h2 id="protokol-naslov"></h2>
+        <div id="protokol"></div>
+        <button id="stampaj-protokol" class="dugme ne-stampaj"></button>
+      </section>
+    </div>
+
+    <!-- ===== OBJAŠNJENJA ===== -->
+    <div id="deo-obj" class="deo" role="tabpanel" hidden>
+      <section class="kartica">
+        <h2 data-t="tab_obj"></h2>
+        <div id="objasnjenja"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer data-t="izvor"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="opstine.js"></script>
+  <script src="reke.js"></script>
+  <script src="podaci.js"></script>
+  <script src="app.js"></script>
+  <script src="objasnjenja.js"></script>
+  <script src="rezultati.js"></script>
+  <script src="protokol.js"></script>
+</body>
+</html>
