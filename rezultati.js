@@ -65,7 +65,7 @@ const REZ_TEKST = {
       "za stare verovatnoća nepovoljnog bloka pala je sa 23,1 % na 9,1 %.",
       "Jutarnja provera je bila bolja od fiksnog rasporeda samo u jednom smeru provere; zimi je u obrnutoj proveri " +
       "čak odmogla. Zato se u protokolu i u ovoj aplikaciji primenjuje samo u prelaznom periodu.",
-      "Pravilo prethodnog dana i lokalni raspored nisu doneli pouzdanu korist ni u jednom smeru provere.",
+      "Lokalni raspored bio je pouzdano, ali malo bolji samo u glavnoj proveri (dom za stare i jednosmenska škola), a pravilo prethodnog dana nije donelo pouzdanu korist ni u jednom smeru provere.",
       "Kada je postojeći termin već povoljan, kao kod jednosmenske škole zimi, prostor za poboljšanje je mali."],
     porukeNaslov: "Ključne poruke",
     trakeNaslov: "Verovatnoća da blok obuhvati bar jedan Poor+ sat, 2025",
@@ -100,7 +100,7 @@ const REZ_TEKST = {
       "The morning check outperformed the fixed schedule in only one test direction, and in winter it even " +
       "performed worse in the reverse test. The protocol and this app therefore apply it only in the " +
       "transitional period.",
-      "The previous-day rule and the site-specific schedule brought no reliable benefit in either direction.",
+      "The site-specific schedule was reliably but only slightly better in the main test only (nursing homes and single-shift schools), and the previous-day rule brought no reliable benefit in either direction.",
       "When the current slot is already favourable, as for single-shift schools in winter, there is little " +
       "room for improvement."],
     porukeNaslov: "Key messages",

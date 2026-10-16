@@ -8,7 +8,7 @@ The framework moves from describing when adverse hours occur to the practical qu
 
 **Interactive application "When to go outside?" (Serbian | English):** https://jelena383.github.io/belgrade-from-data-to-decisions/
 
-The application is based on historical data (2024–2025) and does not show current conditions. For current air quality in Serbia, see the portal of the Serbian Environmental Protection Agency: https://vazduh.sepa.gov.rs/
+The application and the protocol are the author's proposals derived from the study; they are not official tools or recommendations of the Belgrade City Institute of Public Health. The application is based on historical data (2024–2025) and does not show current conditions. For current air quality in Serbia, see the portal of the Serbian Environmental Protection Agency: https://vazduh.sepa.gov.rs/
 
 ## Project Objective
 
@@ -71,7 +71,7 @@ Confidence intervals were obtained by a month-stratified block bootstrap (weekly
 - **A simple seasonal schedule carries most of the benefit.** At 24 sites with O3 measurements, the fixed seasonal schedule achieved an efficiency of 0.72 (95% CI 0.66–0.78) for nursing homes, 0.57 (0.46–0.67) for two-shift schools, 0.40 (0.31–0.50) for kindergartens and 0.20 (−0.02–0.40) for single-shift schools.
 - **The schedule transfers reliably between years.** In the reverse test, the efficiencies were 0.76, 0.54, 0.45 and 0.10.
 - **A large absolute reduction in nursing homes.** The probability of a Poor+ block during outdoor time in nursing homes fell from 23.1% to 9.1%.
-- **More complex rules are not robust.** The morning check was reliably better than the fixed schedule in only one test direction (+0.05 to +0.06), and the previous-day rule and the site-specific schedule were not reliably better in either direction.
+- **More complex rules are not robust.** The morning check was reliably better than the fixed schedule in only one test direction (+0.05 to +0.06), the site-specific schedule was reliably but only slightly better in the main test for nursing homes and single-shift schools (+0.03 and +0.09), but not in the reverse test, and the previous-day rule was not reliably better in either direction.
 - **The same conclusion for a second outcome.** Results were nearly identical for the number of Poor+ hours per block.
 
 ## Proposed Protocol
@@ -160,7 +160,7 @@ Hourly air quality data are the property of the Belgrade City Institute of Publi
 The study shows how hourly data that a monitoring network already routinely collects can, without new measurements, be translated into:
 
 - a simple seasonal schedule for outdoor activities that transfers reliably from one year to the next,
-- a protocol that a public health institute can recommend to schools, kindergartens and nursing homes,
+- a proposed protocol that public health services could recommend to schools, kindergartens and nursing homes,
 - and a reproducible test that can be repeated every year, with each new year as a new test.
 
 Such a schedule is a potentially low-cost organisational measure, but it does not replace emission reductions.
