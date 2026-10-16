@@ -4,8 +4,8 @@ const PROTOKOL = {
     tab: "Protokol za ustanove",
     dugme: "Štampaj / sačuvaj protokol (PDF)",
     html: `
-<p class="napomena">Gradski zavod za javno zdravlje Beograd · verzija 1.0, oktobar 2026 · zasnovano na satnim
-merenjima kvaliteta vazduha 2024–2025</p>
+<p class="napomena">Predlog protokola proistekao iz naučnog rada · verzija 1.0, oktobar 2026 · zasnovano na satnim
+merenjima kvaliteta vazduha 2024–2025. Ovo nije zvanični dokument Gradskog zavoda za javno zdravlje Beograd.</p>
 
 <h3>Zašto ovaj protokol</h3>
 <p>Kvalitet vazduha u Beogradu menja se tokom dana na predvidiv način. Zimi je vazduh najlošiji uveče i rano
@@ -67,16 +67,16 @@ osnovni sezonski raspored se pokazao stabilnim u oba smera. U proveri je osnovni
 sezonski raspored smanjio verovatnoću da aktivnost napolju obuhvati sat sa zagađenim vazduhom u domovima za
 stare sa 23,1 % na 9,1 %, a u školama koje rade u dve smene sa 18,2 % na 10,4 %.</p>
 
-<h3>Kontakt</h3>
-<p>Gradski zavod za javno zdravlje Beograd, Bulevar despota Stefana 54a, 11000 Beograd</p>
+<h3>Autorka</h3>
+<p>Jelena Lukić, ORCID 0009-0008-7883-6402</p>
 `
   },
   en: {
     tab: "Protocol for facilities",
     dugme: "Print / save the protocol (PDF)",
     html: `
-<p class="napomena">Belgrade City Institute of Public Health · version 1.0, October 2026 · based on hourly air
-quality measurements 2024–2025</p>
+<p class="napomena">Proposed protocol derived from a research study · version 1.0, October 2026 · based on hourly air
+quality measurements 2024–2025. This is not an official document of the Belgrade City Institute of Public Health.</p>
 
 <h3>Why this protocol</h3>
 <p>Air quality in Belgrade changes during the day in a predictable way. In winter, air is worst in the evening
@@ -141,8 +141,8 @@ the basic seasonal schedule proved stable in both directions. In this test, the 
 reduced the probability that an outdoor activity included an hour with polluted air from 23.1% to 9.1% in
 nursing homes and from 18.2% to 10.4% in two-shift schools.</p>
 
-<h3>Contact</h3>
-<p>Belgrade City Institute of Public Health, Bulevar despota Stefana 54a, 11000 Belgrade, Serbia</p>
+<h3>Author</h3>
+<p>Jelena Lukić, ORCID 0009-0008-7883-6402</p>
 `
   }
 };

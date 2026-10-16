@@ -23,7 +23,7 @@ const TEKST = {
     naslov: "Kada napolje?",
     podnaslov: "Planiranje aktivnosti napolju u školama, vrtićima i domovima za stare",
     napomenaVrh: "Preporuke se zasnivaju na merenjima GZJZ za 2024–2025. godinu i pravilima proverenim " +
-      "u naučnom radu. Nisu prognoza kvaliteta vazduha za izabrani dan.",
+      "u naučnom radu. Nisu prognoza kvaliteta vazduha za izabrani dan. Aplikacija je predlog autorke iz naučnog rada, a ne zvanični alat GZJZ.",
     tab_plan: "Planiraj aktivnost", tab_rez: "Kako su pravila radila 2024–2025", tab_obj: "Objašnjenja",
     kalkulator: "Kalkulator", datum: "Datum", lokacija: "Monitoring lokacija (najbliža ustanovi)",
     ustanova: "Ustanova", jutro_lbl: "Kategorija u 06–07 h",
@@ -83,7 +83,7 @@ const TEKST = {
     naslov: "When to go outside?",
     podnaslov: "Planning outdoor activities in schools, kindergartens and nursing homes",
     napomenaVrh: "Recommendations are based on GZJZ measurements for 2024–2025 and on rules tested in a " +
-      "scientific study. They are not an air quality forecast for the selected day.",
+      "scientific study. They are not an air quality forecast for the selected day. The app is the author's proposal from a research study, not an official GZJZ tool.",
     tab_plan: "Plan an activity", tab_rez: "How the rules performed in 2024–2025", tab_obj: "Explanations",
     kalkulator: "Calculator", datum: "Date", lokacija: "Monitoring site (closest to the facility)",
     ustanova: "Facility", jutro_lbl: "Category at 06–07 h",
@@ -175,7 +175,7 @@ function primeniJezik(novi) {
   jezik = novi;
   document.documentElement.lang = novi;
   document.querySelectorAll("[data-t]").forEach((e) => { e.textContent = T()[e.dataset.t]; });
-  document.title = T().naslov + " – GZJZ Beograd";
+  document.title = T().naslov;
   el("btn-sr").classList.toggle("aktivan", novi === "sr");
   el("btn-en").classList.toggle("aktivan", novi === "en");
   popuniLokacije();

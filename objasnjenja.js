@@ -45,8 +45,7 @@ zdravlje, pa je cilj aplikacije bolji izbor termina, a ne odustajanje od aktivno
 
 <h3>Izvor i citiranje</h3>
 <p>Podaci: Gradski zavod za javno zdravlje Beograd, satni podaci 27 automatskih mernih stanica lokalne
-mreže, 2024–2025, validirani. Metoda: Lukić, J. (2026). <i>Od podataka do odluke: pravila odlučivanja za
-planiranje aktivnosti napolju u osetljivim objektima prema satnim podacima o kvalitetu vazduha u Beogradu (2024–2025)</i>
+mreže, 2024–2025, validirani. Metoda: Lukić, J. (2026). <i>Vreme je bitno: od vremenske usklađenosti nepovoljnog kvaliteta vazduha sa boravkom u osetljivim objektima do pravila za planiranje aktivnosti na otvorenom u Beogradu (2024–2025)</i>
 [Rukopis u pripremi]. Verzija aplikacije 1.1, oktobar 2026.</p>
 `,
   en: `
@@ -96,8 +95,7 @@ benefits health, so the aim of the app is a better choice of time slot, not givi
 
 <h3>Source and citation</h3>
 <p>Data: Belgrade City Institute of Public Health (GZJZ), hourly data from 27 automatic monitoring stations
-of the local network, 2024–2025, validated. Method: Lukić, J. (2026). <i>From data to decisions: Decision
-rules for planning outdoor activities in sensitive facilities based on hourly air quality data in Belgrade, Serbia (2024–2025)</i>
+of the local network, 2024–2025, validated. Method: Lukić, J. (2026). <i>Timing matters: From temporal alignment of adverse air quality with occupancy of sensitive facilities to decision rules for outdoor activities in Belgrade, Serbia (2024–2025)</i>
 [Manuscript in preparation]. App version 1.1, October 2026.</p>
 `
 };
